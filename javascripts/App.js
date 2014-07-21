@@ -480,8 +480,8 @@ var newParams = {}, newParams2 = {};
 
 window.fbAsyncInit = function() {
   FB.init({
-    appId      : '320370924773477', // App ID
-    channelUrl : '//tner.metamaps.cc/channel.html', // Channel File
+    appId      : '552377898207810', // App ID
+    channelUrl : '//edge.allmende.io/channel.html', // Channel File
     status     : true, // check login status
     cookie     : true, // enable cookies to allow the server to access the session
     xfbml      : true  // parse XFBML
@@ -536,7 +536,7 @@ window.fbAsyncInit = function() {
 function loadPosts(params) {
     if (params == undefined) params = newParams;
     
-    FB.api('/120497731371323/feed', params, function(response) {
+    FB.api('/228258450638228/feed', params, function(response) {
       console.log(response);
       if (response.data.length == 0) {
         document.getElementById("loadMore").innerHTML =
